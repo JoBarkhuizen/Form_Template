@@ -1,0 +1,59 @@
+<!--Jo Barkhuizen, Test Analyst, Web Design training-->
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Radio buttons</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+   
+    <style>
+        form {
+            margin-left: 20px;
+            }
+    </style>
+    
+</head>
+<body>
+<form action=" " method="post">
+    
+    <p>Do you want to learn more about our offer?</p>
+     <label for="yes">Yes</label> <input type="radio" value="yes" name="offer" id="yes" checked="checked">
+        <label for="no">No</label> <input type="radio" value="no" name="offer" id="no">
+    
+    <p>you can nest elements using optgroup tag as in the below selection</p>
+         
+       <select id="groups" name="groups">
+  <optgroup label="fruits">
+    <option>Banana</option>
+    <option selected>Cherry</option>
+    <option>Lemon</option>
+  </optgroup>
+  <optgroup label="vegetables">
+    <option>Carrot</option>
+    <option>Eggplant</option>
+    <option>Potato</option>
+  </optgroup>
+</select>     
+      
+              
+      <fieldset>
+  <legend>What is your favorite meal?</legend>
+  <ul>
+    <li>
+      <label for="soup">Soup</label>
+      <input type="radio" checked id="soup" name="meal" value="soup">
+    </li>
+    <li>
+      <label for="curry">Curry</label>
+      <input type="radio" id="curry" name="meal" value="curry">
+    </li>
+    <li>
+      <label for="pizza">Pizza</label>
+      <input type="radio" id="pizza" name="meal" value="pizza">
+    </li>
+  </ul>
+</fieldset>  
+</form>
+</body>
+</html>

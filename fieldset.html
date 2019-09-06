@@ -1,0 +1,123 @@
+<!--Jo Barkhuizen, Test Analyst, Web Design training-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Job Search Form</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<style>
+
+body {
+	font-family: arial, sans-serif;
+	margin: 0;
+     }
+h1 {
+	margin: 30px;
+     }
+
+form {
+	margin: 20px;
+     }
+    
+fieldset{
+        width: 410px;
+	background: #ddeeff;
+	border: solid medium #053972;
+    }   
+
+legend {
+        font-weight: bold;
+	border: solid 1px #053972;
+	background: #fff;
+	padding: 2px;
+    }
+
+label.contact {
+	width: 80px;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+    }
+
+label.area {
+	margin-left: 2px;
+	margin-right: 10px;
+    }
+
+fieldset.industry-area {
+	margin-top: 20px;
+    }  
+    
+</style>
+</head>
+<body>
+<h1>Job Search</h1>
+<form action="mailto:diebarkhuizens@hotmail.com" method="post" enctype="text/plain">
+    
+    <fieldset>
+    <legend>Contact Information:</legend>
+    <p><label class ="contact" for="name"></label>Name: <input type="text" name="name" id="name" size="30"></p>
+    <p><label class ="contact" for="email"></label>Email: <input type="text" name="email" id="email" size="30"></p>
+    <p><label class ="contact" for="phone"></label>Phone: <input type="phone" name="phone" id="phone" size="30"></p>
+    </fieldset>
+    
+      <fieldset class="industry-area">
+        <legend>Select Your Industry:</legend>
+            <p>
+            <input type ="checkbox" name="industry" value="hc" id="hc"><label for="hc" class="area">Healthcare</label>
+            <input type ="checkbox" name="industry" value="it" id="it"><label for="it" class="area">Information Technology</label>
+            </p>
+            <p>
+            <input type ="checkbox" name="industry" value="rt" id="rt"><label for="rt" class="area">Retail</label>
+            <input type ="checkbox" name="industry" value="ac" id="ac"><label for="ac" class="area">Accounting</label>
+            <input type ="checkbox" name="industry" value="ed" id="ed"><label for="ed" class="area">Education</label>
+            </p>
+<br>
+ <p>
+    Select your position:
+        <select>
+            <optgroup label="Medical Industry">
+            <option>Physician</option>
+            <option>Therapist</option>
+            <option>Registered Nurse</option>
+            <option>Pharmacy Technician</option>
+        </optgroup>
+        <optgroup label="Information Technology">
+            <option>Systems Engineer</option>
+            <option>Web Developer</option>
+            <option>Database Engineer</option>
+            <option>Test Analyst</option>
+            <option>Technical Lead</option>
+        </optgroup>
+        <optgroup label="Retail">
+                <option>Sales Manager</option>
+                <option>Sales Rep</option>
+        </optgroup>
+        <optgroup label="Accounting">
+                <option>Auditor</option>
+                <option>Forensic Accountant</option>
+                <option>Tax Accountant</option>
+        </optgroup>
+        <optgroup label="Education">
+                <option>Principal</option>
+                <option>Teacher</option>
+        </optgroup>
+        </select>
+   </p>
+    </fieldset>
+    
+   
+    
+    <p>
+    Are you willing to relocate?&nbsp; &nbsp;  
+        <label for="yes">Yes</label> <input type="radio" value="yes" name="relocate" id="yes">&nbsp; &nbsp; &nbsp; 
+        <label for="no">No</label> <input type="radio" value="no" name="relocate" id="no">
+    </p>
+    
+    <p>
+    <input type="submit" value="Submit">
+    
+    </p>
+</form>
+</body>
+</html>
